@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="FoodPedia Search Engine By Akashbk201">
+    <meta name="keywords" content="HTML, CSS, JavaScript, JSON">
+    <meta name="author" content="Akashbk201">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drink Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-cyan-400">
+    <section class="bg-cyan-400 py-2 md:py-10">
+        <div class="container m-auto px-6 py-2 md:py-4">
+
+            <div class="flex flex-col lg:flex-row gap-6">
+                <div class="basis-full lg:basis-1/2">
+                    <div class="text-left">
+                        <img class="w-24 " src="images/logo.png" alt="">
+                        <h2 class="text-xl md:text-5xl text-black text-left font-bold py-6">Welcome to
+                            <u>Cocktail House</u></h2>
+                        <h4 class="text-left text-lg md:text-2xl font-normal text-gray-600 pb-6">
+                            Making Drinks at home can be pretty simple. While it might seem intimidating, making a great
+                            cocktail and other drink is 100% accessible. As we’ve gone about our research, we’ve found
+                            that signature alcoholic drinks add infinitely more fun to any evening! Search and have Fun.
+                        </h4>
+                    </div>
+                </div>
+                <div class="basis-full lg:basis-1/2">
+                    <div class="flex flex-col gap-6 h-56 justify-end">
+                        <div>
+                            <input id="getinput" type="text" placeholder="Ex: Chicken"
+                                class="block basis-full md:basis-3/4 w-full h-12 px-3 py-2 md:py-0 bg-white border border-gray-600 rounded-lg text-lime-950 text-sm md:text-base font-normal"
+                                value="">
+                        </div>
+                        <button id="dev-btn"
+                            class="basis-full md:basis-1/4 inline-block bg-orange-950 text-white text-base md:text-lg font-semibold text-center cursor-pointer rounded-lg py-2 md:py-0">Search</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="bg-cyan-400 py-2 md:py-6">
+        <div class="container px-6 m-auto">
+
+            <div id="statistic-box-contain" class="transition-all delay-200">
+                <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12" id="statistic-box">
+                    <!-- <div class="col-span-4 bg-gray-800 px-6 py-6 rounded-lg">
+                        <img class="w-32 md:w-full rounded-md h-32  md:h-auto object-contain md:object-cover" src=""
+                            alt="">
+                        <h2 class="text-base md:text-2xl text-left py-3 font-bold text-white">Title</h2>
+                        <p class="text-sm md:text-base font-light text-left text-white line-clamp-3">
+                            Paragraph</p>
+                        <p class="text-sm md:text-base italic text-gray-200 font-semibold text-left pt-4">
+                            Details</p>
+                        <div class="flex gap-4 flex-col md:flex-row pt-6">
+
+                            <button onclick=""
+                                class="basis-1/2 inline-block bg-transparent border border-red-600 text-gray-50 text-center py-2 text-base font-semibold rounded-lg cursor-pointer">More
+                                Details</button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+
+            <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12 pt-6 transition-all delay-200" id="box">
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="fixed top-0 left-0 w-full h-lvh bg-[#000000bd] items-center invisible" id="popup">
+
+    </section>
+
+
+    <!-- JavaScript -->
+    <script src="custom.js"></script>
+</body>
+
+</html>
